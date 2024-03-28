@@ -1,0 +1,174 @@
+:root{
+    --blue_color: #0d6efd;
+    --grey_color: #6c757d;
+}
+
+*{
+    padding: 0;
+    margin: 0 ;
+    box-sizing: border-box !important;
+}
+
+/* -----------------HEADER START-------------- */
+/* nav start */
+.navbar{
+    background: linear-gradient(hwb(216 86% 0% / 0.712), rgba(245, 245, 245, 0.75));
+}
+
+@media screen and (max-width:991px) {
+    .navbar ul{
+        background-color: rgba(236, 236, 236, 0.5);
+        border: 1px solid #47474720;
+    }
+}
+.navbar-brand{
+    font-size: 25px !important;
+}
+
+.nav-item a{
+    font-weight: 600;
+}
+.nav-item a:hover{
+    text-decoration: underline;
+    color: var(--blue_color) !important;
+}
+/* nav end */
+/* -----------------HEADER END-------------- */
+
+
+
+/* -----------------Home START-------------- */
+.profile_image{
+    border: 1rem solid ;
+    border-color: var(--blue_color) var(--blue_color) var(--grey_color) var(--grey_color);
+    border-radius: 50%;
+    height: 250px; 
+    width: 250px;
+    overflow: hidden;
+}
+
+.home_text p{
+    max-width: 455px;
+}
+/* -----------------Home END-------------- */
+
+/* -----------------About Start----------- */
+#about{
+    height: 350px;
+}
+.social_media_links{
+    gap: 20px;
+}
+
+.social_media_links a{
+    transition: .2s;
+    font-size: 30px;
+    color: var(--grey_color);
+}
+
+.social_media_links a:hover{
+    color: var(--blue_color) ;
+}
+/* -----------------About End----------- */
+
+
+/* -----------------Service Start----------- */
+.service_item p{
+    font-size: 13px;
+}
+/* -----------------Service End----------- */
+
+
+/* -----------------Project Start----------- */
+.about_project{
+    max-width: 370px;
+}
+.about_project dt::before{
+    content: "";
+    height: 25px;
+    padding-left: 10px;
+    border-left: 3px solid var(--blue_color);
+}
+
+.about_project dd{
+    padding-top: 5px;
+    margin-left: 35px;
+    font-size: 14px;
+}
+
+.project_image{
+    border: 1px solid rgba(64, 64, 65, 0.2);
+}
+.about_project>a{
+    text-align: center;
+    display: block;
+    background-color: var(--blue_color);
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    transition: .15s;
+}
+
+.about_project>a:hover{
+    filter: contrast(2);
+    color: white;
+}
+/* -----------------Project End----------- */
+
+
+/* -----------------Education Start----------- */
+table{
+    height: 350px;
+}
+.education_section td[title]:after{
+    content: attr(title);
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--grey_color);
+}
+/* -----------------Education End----------- */
+
+
+/* -----------------Extra Activities Start----------- */
+.extra_images_container .carousel{
+    width: 300px;
+}
+.extra_images_container .carousel-inner{
+    height: 450px;
+}
+
+.extra_images_container .carousel-item{
+    justify-content: end;
+    width: 100%;
+}
+
+.carousel-inner{
+    padding-bottom: 8px;
+    border-bottom: 8px solid var(--blue_color);
+}
+
+.carousal_arrow_buttons{
+    border-radius: 50%;
+    padding: 5px;
+    background-color: #6c757d50;
+}
+
+.ea_img_container_title{
+    position: relative;
+    width: 240px;
+
+    h5{
+        margin-bottom: 0;
+    }
+}
+/* -----------------Extra Activities End----------- */
+
+
+/* -----------------Footer Start----------- */
+footer p{
+    font-size: 13px;
+}
+/* -----------------Footer End----------- */
