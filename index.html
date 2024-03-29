@@ -108,21 +108,32 @@
 
       <!-- About page Start -->
       <section id="about" class="py-5">
-        <div class="container-md py-5 py-md-3">
+        <div class="container-md py-md-3">
           <div class="row justify-content-center">
             <div class="col-lg-8">
               <div class="section_title text-center">
-                <h3
+                <h2
                   class="fw-bold pb-3"
                   style="text-decoration: underline #0d6efd"
                 >
                   About Me
-                </h3>
+                </h2>
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-12 d-flex justify-content-center py-3">
+          <div class="row d-flex align-items-center">
+            <div class="col-md-6">
+              <div class="my_contact">
+                <ul>
+                  <li title="Mobile">&emsp;: 8593888264</li>
+                  <li title="E-mail">&emsp; : md.nasimkuniyil@gmail.com</li>
+                  <li title="House">&emsp; : Kuniyil Thaikkandy</li>
+                  <li title="Place">&emsp;&ensp;  : unummal, Chendayad (P.O)</li>
+                  <li title="Dist">&emsp;&emsp;  : Kannur</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6 d-flex justify-content-center py-3">
               <div class="about_text">
                 <p style="max-width: 500px" class="lh-lg">
                   "I'm a dedicated web designer with a background in interior
@@ -138,13 +149,13 @@
             <div
               class="col-12 social_media_links d-flex justify-content-center"
             >
-              <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
-              <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+              <a href="https://www.facebook.com/nasim.kuniyil.3?mibextid=ZbWKwL"><i class="fa-brands fa-square-facebook"></i></a>
+              <a href="https://www.instagram.com/nasim.kuniyil?igsh=MW9iNDVibTFiaXlncg=="><i class="fa-brands fa-square-instagram"></i></a>
               <a href="https://github.com/nasim-kuniyil"
                 ><i class="fa-brands fa-square-github"></i
               ></a>
-              <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
-              <a href="#"><i class="fa-brands fa-square-threads"></i></a>
+              <a href="https://x.com/nasimkuniyil?t=DKJL6glDiVTGmtz_njSmNQ&s=08"><i class="fa-brands fa-square-x-twitter"></i></a>
+              <a href="https://www.threads.net/@nasim.kuniyil"><i class="fa-brands fa-square-threads"></i></a>
             </div>
           </div>
         </div>
@@ -153,16 +164,16 @@
 
       <!-- Service page start -->
       <section id="service" class="py-5">
-        <div class="container-md py-5 py-md-3">
+        <div class="container-md py-md-3">
           <div class="row justify-content-center">
             <div class="col-lg-8">
               <div class="section_title text-center">
-                <h3
+                <h2
                   class="fw-bold pb-3"
                   style="text-decoration: underline #0d6efd"
                 >
                   What I do
-                </h3>
+                </h2>
               </div>
             </div>
           </div>
@@ -208,12 +219,12 @@
           <div class="row justify-content-center">
             <div class="col-lg-8">
               <div class="section_title text-center">
-                <h3
+                <h2
                   class="fw-bold pb-3"
                   style="text-decoration: underline #0d6efd"
                 >
                   Projects
-                </h3>
+                </h2>
               </div>
             </div>
           </div>
@@ -362,12 +373,12 @@
             <div class="row justify-content-center">
               <div class="col-lg-8">
                 <div class="section_title text-center">
-                  <h3
+                  <h2
                     class="fw-bold pb-4"
                     style="text-decoration: underline #0d6efd"
                   >
                     Education
-                  </h3>
+                  </h2>
                 </div>
               </div>
             </div>
@@ -409,12 +420,12 @@
             <div class="row justify-content-center">
               <div class="col-lg-8">
                 <div class="section_title text-center">
-                  <h3
+                  <h2
                     class="fw-bold pb-2"
                     style="text-decoration: underline #0d6efd"
                   >
                     Extra Activities
-                  </h3>
+                  </h2>
                 </div>
               </div>
             </div>
@@ -632,12 +643,12 @@
             <div class="row justify-content-center">
               <div class="col-lg-8">
                 <div class="section_title text-center">
-                  <h3
+                  <h2
                     class="fw-bold pb-3"
                     style="text-decoration: underline #0d6efd"
                   >
                     Contact Me
-                  </h3>
+                </h2>
                 </div>
               </div>
             </div>
@@ -645,7 +656,7 @@
           <div class="row d-flex justify-content-center">
             <div class="col-8">
                 <!-- form -->
-              <form id="submit-form" action="" name="contactform" onsubmit="return validform()">
+              <form id="submit-form" action="" name="contactform" onsubmit="">
                 <div class="row">
                   <div class="col-12 col-md-6 pb-3">
                     <input
@@ -654,6 +665,7 @@
                       name="fname"
                       placeholder="First Name"
                       class="form-control form-control-md border-0 shadow-sm fs-6"
+                      onfocusout="validform()"
                       required
                     />
                   </div>
@@ -709,6 +721,8 @@
                       type="submit"
                       class="btn btn-primary px-3"
                       value="Submit"
+                      id="submitbtn"
+                      disabled
                     />
                   </div>
                 </div>

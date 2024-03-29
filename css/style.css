@@ -53,8 +53,14 @@
 /* -----------------Home END-------------- */
 
 /* -----------------About Start----------- */
-#about{
-    height: 350px;
+.my_contact li{
+    list-style: none;
+}
+.my_contact li[title]::before{
+    content: attr(title);
+    font-size: 16px;
+    font-weight: bold;
+    color: #0d6efd;
 }
 .social_media_links{
     gap: 20px;
